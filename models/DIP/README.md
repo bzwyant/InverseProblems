@@ -14,7 +14,7 @@ $$
 where $E(x; x_0)$ is a <i>data term</i> and $R(x)$ is an <i>image prior</i>. The data term $E(x; x_0)$ is usually easy to design for a wide range of problems, such as super-resolution, denoising, inpainting, while image prior $R(x)$ is a challenging one. Today's trend is to capture the prior $R(x)$ with a ConvNet by training it using large number of examples. 
 
 
-We first notice, that for a surjective $g: \theta \mapsto x$ the following procedure in theory is equivalent to \eqref{eq1}:
+We first notice, that for a surjective $g: \theta \mapsto x$ the following procedure in theory is equivalent to **eq1**:
         
 $$\min_\theta E(g(\theta); x_0) + R(g(\theta)) \,.$$
 
@@ -27,7 +27,7 @@ Here, the network $f_\theta$ is initialized randomly and input $z$ is filled wit
 In other words, <b>instead of searching for the answer in the image space we now search for it in the space of neural network's parameters</b>. We emphasize that we never use a pretrained network or an image database. Only corrupted image $x_0$ is used in the restoration process.  
 
 #### Project page: https://dmitryulyanov.github.io/deep_image_prior
-
+#### Demonstration with image denoising task can be found at: https://github.com/DmitryUlyanov/deep-image-prior/blob/master/denoising.ipynb
 
 ## References:
 
